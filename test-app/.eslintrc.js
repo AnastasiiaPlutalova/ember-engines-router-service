@@ -32,9 +32,12 @@ module.exports = {
         './testem.js',
         './blueprints/*/index.js',
         './config/**/*.js',
+<<<<<<< HEAD:addon/.eslintrc.js
+=======
         './test-app/config/**/*.js',
         './test-app/lib/*/ember-cli-build.js',
         './test-app/lib/*/index.js',
+>>>>>>> Convert addon to V2: part 4:test-app/.eslintrc.js
       ],
       parserOptions: {
         sourceType: 'script',

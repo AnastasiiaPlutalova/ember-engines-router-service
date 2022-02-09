@@ -90,5 +90,13 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "ember-addon": {
+    "paths": [
+      "../addon"
+    ]
+  },
+  "volta": {
+    "extends": "../package.json"
   }
 }
