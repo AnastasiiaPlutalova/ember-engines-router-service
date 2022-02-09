@@ -16,7 +16,7 @@
 /connect.lock
 /coverage/
 /libpeerconnection.log
-tests/dummy/lib/**/node_modules
+test-app/node_modules
 /npm-debug.log*
 /testem.log
 /yarn-error.log

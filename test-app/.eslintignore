@@ -21,4 +21,4 @@
 /bower.json.ember-try
 /package.json.ember-try
 
-/tests/dummy/lib/*/node_modules/
+/test-app/node_modules/
