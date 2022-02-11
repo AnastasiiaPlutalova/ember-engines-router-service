@@ -87,3 +87,6 @@ jobs:
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
         working-directory: test-app
+      - name: Run Tests Addon
+        run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
+        working-directory: addon
