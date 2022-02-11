@@ -31,8 +31,12 @@ jobs:
       - name: Lint Test App
         run: yarn lint
         working-directory: test-app
-      - name: Run Tests
+      - name: Run Addon Tests
         run: yarn test:ember
+        working-directory: addon
+      - name: Run Tests for Test App
+        run: yarn test:ember
+        working-directory: test-app
 
   floating:
     name: "Floating Dependencies"
