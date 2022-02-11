@@ -27,6 +27,9 @@
     "lint:js:fix": "eslint . --fix"
   },
   "dependencies": {
+    "ember-cli-babel": "^7.26.10"
+  },
+  "devDependencies": {
     "babel-eslint": "^10.1.0",
     "ember-cli-babel": "^7.26.10",
     "ember-template-lint": "^3.15.0",

@@ -15,7 +15,6 @@ jobs:
   test:
     name: "Tests"
     runs-on: ubuntu-latest
-    working-directory: test-app
 
     steps:
       - uses: actions/checkout@v2
@@ -51,6 +50,7 @@ jobs:
         run: until yarn install --no-lockfile; do echo "Retrying yarn"; done
       - name: Run Tests
         run: yarn test:ember
+        working-directory: test-app
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
@@ -85,3 +85,4 @@ jobs:
         run: until yarn install --frozen-lockfile; do echo "Retrying yarn"; done
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
+        working-directory: test-app
